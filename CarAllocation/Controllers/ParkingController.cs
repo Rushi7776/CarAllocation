@@ -36,9 +36,4 @@ namespace CarAllocation.Controllers
             return Ok(parkingList);
         }
     }
-
-    public class CarPlateNumberRequest
-    {
-        public string CarPlateNumber { get; set; }
-    }
 }
