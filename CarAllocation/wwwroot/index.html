@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Allocation System</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Parking Allocation System</h1>
+        <div class="form-group">
+            <label for="carPlateNumber">Car Plate Number:</label>
+            <input type="text" id="carPlateNumber" placeholder="Enter Car Plate Number">
+            <button onclick="allocateParking()">Allocate Parking</button>
+        </div>
+        <div id="result" class="result"></div>
+        <div class="parking-list-container">
+            <h2>Parking List</h2> <!-- Parking List header outside the scrollable area -->
+            <div class="parking-list" id="parkingList"></div> <!-- Parking List content -->
+            <div class="pagination">
+                <button id="prevPage" onclick="loadParkingList(currentPage - 1)" disabled>Previous</button>
+                <button id="nextPage" onclick="loadParkingList(currentPage + 1)">Next</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
